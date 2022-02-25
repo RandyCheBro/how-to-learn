@@ -1,12 +1,11 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
+  padding: 0;
+  
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  border: 3px solid red;
 }
 .text {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -15,7 +14,6 @@
   text-decoration: none;
   color: #000000;
 }
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -26,64 +24,113 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
-
+  border: 3px solid red;
 }
 .logo_place_header {
-  display: flex;
+  position: absolute;
+  z-index: 3;
   width: 183px;
   height: 32px;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
+  border: 3px solid red;
 }
-.header_title {
-  display: flex;
+.header__title {
+  position: absolute;
+  z-index: 3;
   width: 730px;
-  margin-left: 64px;
+  left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  position: absolute;
-}
-.header_subtitle {
-  display: flex;
+  border: 3px solid red;
+  }
+.header__subtitle {
   width: 388px;
-  margin-left: 64px;
-  margin-bottom: 0;
+  left: 64px;
+  bottom: 30px;
   position: absolute;
+  z-index: 3;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  border: 3px solid red;
 }
-.header_link {
+.header__link {
   color:#2f80ed;
+  border: 3px solid red;
 }
-.header_main_illustration {
+.header__main-illustration {
   position: absolute;
-  display: flex;
   width: 765px;
   height: 608px;
-  margin-bottom: 0;
-  margin-right: 0;
-
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  border: 3px solid aqua;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  display: flex;
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  margin-top: 64px;
-  margin-right: 0;
+  top: 64px;
+  right: 0;
   position: absolute;
-
-}
+  z-index: 1;
+  border: 3px solid red;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 3px solid red;
+  }
+  .two-colums {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 100px auto;
+    border: 3px solid red;
+    width: 80%;
+  }
+  .two-colums__brief {
+    border: 3px solid red; 
+    width: 175px;
+    margin: 0;
+    color: #2f80ed;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  .two-colums__main-text {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    min-width: 784px;
+  }
+  .two-colums__paragraph {
+    border: 3px solid red;
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 24px;
+    margin: 0; 
+  }
+  .two-colums__span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .two-colums__paragraph-middle {
+    margin: 30px 0;
+  }
+  
 
 
 
