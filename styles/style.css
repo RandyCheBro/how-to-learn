@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+} 
 
 .page {
   min-width: 1100px;
@@ -23,6 +31,7 @@
   position: relative;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -79,6 +88,7 @@
   right: 0;
   position: absolute;
   z-index: 1;
+  animation: rotation 20s linear infinite;
 }
 
 .description {
@@ -124,6 +134,59 @@
 
 .two-columns__paragraph-middle {
   margin: 30px 0;
+}
+
+.techniques {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.cards {
+  margin: 0px auto;
+  width: 920px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards__item {
+  width: 240px;
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.cards__item_position_last {
+  right: 340px;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 0 40px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 43px auto 0;
+  text-align: center;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 16px 0 0;
+  text-align: center;
 }
 
 .digits {
