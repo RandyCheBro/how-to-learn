@@ -1,7 +1,8 @@
 .header__link {
-    color:#2f80ed;
-  }
+  color: #2f80ed;
+  text-decoration: none;
+}
 
-  .header__link:hover {
-    opacity: 0.4;
-  }
+.header__link:hover {
+  opacity: 0.4;
+}
