@@ -1,6 +1,5 @@
-.footer__columns {
+.footer__column {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   position: relative;
   margin: 60px auto 40px;
